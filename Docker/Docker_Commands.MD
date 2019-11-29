@@ -37,7 +37,7 @@ docker ps
 docker ps -a
 ```
 
-8. run a OS based container which interactive mode (nothing but login to container after it is up and running)
+8. Run a OS based container with interactive mode (nothing but login to container after it is up and running)
 
 ```sh
 docker run -i -t --name centos_server centos:latest
