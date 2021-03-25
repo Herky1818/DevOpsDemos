@@ -62,3 +62,19 @@
    ```sh 
    ansible all -m ping
    ```
+   
+### working with playbooks
+1. Create inventory inside /home/ansadmin and add all the hostnames after login as ansadmin (on control node)
+  ```sh
+  su - ansadmin
+  ``` 
+2. Create hosts file with sudo access and add all the ip-addresses (on control node)
+3. give permissions for hosts as 
+   ```sh
+   chmod 777 hosts
+   ```
+4. Run playbook
+   ```sh
+   ansible-playbook playbook.yml
+   ```
+   
