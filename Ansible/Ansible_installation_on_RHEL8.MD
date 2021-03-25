@@ -1,4 +1,8 @@
 # Ansible Installation on RHEL 8.x server
+### Before installation execute the following command 
+   ```sh
+   dnf update -y ; reboot
+   ```
 
 1. Install Python latest version  (on Control node and Managed host)
    ```sh 
@@ -65,9 +69,9 @@
    
 ### working with playbooks
 1. Create inventory inside /home/ansadmin and add all the hostnames after login as ansadmin (on control node)
-  ```sh
-  su - ansadmin
-  ``` 
+   ```sh
+   su - ansadmin
+   ``` 
 2. Create hosts file with sudo access and add all the ip-addresses (on control node)
 3. give permissions for hosts as 
    ```sh
